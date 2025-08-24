@@ -422,7 +422,7 @@ cat urllist.txt | tr -d ' ' | tr -s '.'
 #Backup commands
 tar -cvf backup.tar *
 
-![Alt text](os_exp01_47.png)
+
 
 ## OUTPUT
 
@@ -434,31 +434,20 @@ mv backup.tar backupdir
 cd backupdir
  
 tar -tvf backup.tar
-
-![Alt text](os_exp01_48.png)
-
 ## OUTPUT
 
 
 tar -xvf backup.tar
-
-![Alt text](os_exp01_49.png)
-
 ## OUTPUT
 
 gzip backup.tar
 
 ls .gz
-
-![Alt text](os_exp01_50.png)
-
 ## OUTPUT
  
 gunzip backup.tar.gz
-
-![Alt text](os_exp01_51.png)
-
 ## OUTPUT
+
  
 # Shell Script
 ```
@@ -467,9 +456,6 @@ echo 'echo Hello World‘; exit 0 >> my-script.sh
 ```
 chmod 755 my-script.sh
 ./my-script.sh
-
-
-
 ## OUTPUT
 
  
