@@ -468,11 +468,10 @@ echo 'echo Hello World‘; exit 0 >> my-script.sh
 chmod 755 my-script.sh
 ./my-script.sh
 
-
+![Alt text](os_exp01_52.png)
 
 ## OUTPUT
 
- 
 cat << stop > herecheck.txt
 ```
 hello in this world
@@ -480,10 +479,11 @@ i cant stop
 for this non stop movement
 stop
 ```
-
 cat herecheck.txt
-## OUTPUT
 
+![Alt text](os_exp01_53.png)
+
+## OUTPUT
 
 cat < scriptest.sh 
 ```bash
@@ -520,26 +520,37 @@ chmod 777 scriptest.sh
  
 ./scriptest.sh 1 2 3
 
+![Alt text](os_exp01_54.png)
+
 ## OUTPUT
 
- 
 ls file1
+
+![Alt text](os_exp01_55.png)
+
 ## OUTPUT
 
 echo $?
+
+![Alt text](osexp01_56.png)
+
 ## OUTPUT 
 ./one
 bash: ./one: Permission denied
  
 echo $?
+
+![Alt text](os_exp01_57.png)
+
 ## OUTPUT 
  
 abcd
  
 echo $?
+
+![Alt text](os_exp01_58.png)
+
  ## OUTPUT
-
-
  
 # mis-using string comparisons
 
@@ -571,13 +582,13 @@ fi
 ```
 ##OUTPUT
 
-
-
 chmod 755 strcomp.sh
  
 ./strcomp.sh 
-## OUTPUT
 
+![Alt text](os_exp01_59.png)
+
+## OUTPUT
 
 # check file ownership
 cat < psswdperm.sh 
@@ -603,6 +614,9 @@ echo “Sorry, you are not the owner of the /etc/passwd file”
 fi
  ```
 ./psswdperm.sh
+
+![Alt text](os_exp01_60.png)
+
 ## OUTPUT
 
 # check if with file location
@@ -649,9 +663,10 @@ fi
 ```
 
 ./ifnested.sh 
+
+![Alt text](os_exp01_61.png)
+
 ## OUTPUT
-
-
 
 # using numeric test comparisons
 cat > iftest.sh 
@@ -693,6 +708,9 @@ fi
 $ chmod 755 iftest.sh
  
 $ ./iftest.sh 
+
+![Alt text](os_exp01_62.png)
+
 ##OUTPUT
 
 # check if a file
@@ -742,6 +760,9 @@ fi
 $ chmod 755 ifnested.sh
  
 $ ./ifnested.sh 
+
+![Alt text](os_exp01_63.png)
+
 ##OUTPUT
 
 # looking for a possible value using elif
@@ -770,6 +791,9 @@ fi
 $ chmod 755 elifcheck.sh
  
 $ ./elifcheck.sh 
+
+![Alt text](os_exp01_64.png)
+
 ## OUTPUT
 
 
@@ -786,6 +810,9 @@ fi
 ```
 $ chmod 755 ifcompound.sh
 $ ./ifcompound.sh 
+
+![Alt text](os_exp01_65.png)
+
 ## OUTPUT
 
 # using the case command
@@ -806,6 +833,8 @@ esac
 $ chmod 755 casecheck.sh 
  
 $ ./casecheck.sh 
+
+![Alt text](os_exp01_66.png)
  
 cat > whiletest
 ```bash
@@ -821,6 +850,8 @@ done
 $ chmod 755 whiletest.sh
  
 $ ./whiletest.sh
+
+![Alt text](os_expp01_67.png)
  
  
 cat untiltest.sh 
@@ -835,7 +866,7 @@ done
 ``` 
 $ chmod 755 untiltest.sh
  
- 
+ ![Alt text](os_exp01_68.png)
  
 cat forin1.sh 
 ```bash
@@ -897,6 +928,9 @@ done
 ```
 $ chmod 755 forin1.sh
 
+![Alt text](os_exp01_69.png)
+![Alt text](os_exp01_70.png)
+
 ## OUTPUT
 cat forinfile.sh 
 ```bash
@@ -918,6 +952,8 @@ Adilabad
 Bhadrachalam
 Khammam
 
+![Alt text](os_exp01_71.png)
+
 ## OUTPUT
 
 
@@ -932,6 +968,9 @@ done
 ````
 $ chmod 755 forctype.sh
 $ ./forctype.sh 
+
+![Alt text](os_exp01_72.png)
+
 ## OUTPUT
 
 cat forctype1.sh 
@@ -945,6 +984,9 @@ done
 ```
 $ chmod 755 forctype.sh
 $ ./forctype1.sh 
+
+![Alt text](os_exp01_73.png)
+
 ## OUTPUT
 
 cat fornested1.sh 
@@ -963,6 +1005,9 @@ done
 $ chmod 755 fornested1.sh
  
 $ ./fornested1.sh 
+
+![Alt text](os_exp01_74.png)
+
  ## OUTPUT
 
  
@@ -986,6 +1031,8 @@ $ chmod 755 forbreak.sh
  
 $ ./forbreak.sh 
  
+![Alt text](os_exp01_75.png)
+
 cat forbreak.sh 
 ```bash
 #!/bin/bash
@@ -1005,6 +1052,9 @@ echo "The for loop is completed“
 $ chmod 755 forcontinue.sh
  
 $ ./forcontinue.sh 
+
+![Alt text](os_exp01_76.png)
+
 ## OUTPUT
  
 cat exread.sh 
@@ -1019,6 +1069,9 @@ echo "Hello $name, welcome to my program. "
 $ chmod 755 exread.sh 
  
 $ ./exread.sh 
+
+![Alt text](os_exp01_77.png)
+
 ## OUTPUT
 
 
@@ -1031,12 +1084,13 @@ echo "Hello $name, welcome to my program. “
 ``` 
 $ chmod 755 exread1.sh 
 
+
 ## OUTPUT
-
-
 
 $ ./exread1.sh 
  
+![Alt text](os_exp01_78.png)
+
 cat funcex.sh
 ```bash
 #!/bin/bash
@@ -1058,7 +1112,9 @@ fi
  
  ./funcex.sh 1 2
 
- 
+ ![Alt text](os_exp01_79.png)``
+
+
 cat argshift.sh
 ```bash
 #!/bin/bash 
@@ -1072,6 +1128,9 @@ $ chmod 777 argshift.sh
 ## OUTPUT
 $ ./argshift.sh 1 2 3
  
+![Alt text](os-exp01_80.png)
+
+
  cat argshift1.sh
 ```bash
  #/bin/bash 
@@ -1088,6 +1147,9 @@ done
 $ chmod 777 argshift.sh
 ## OUTPUT
 $ ./argshift.sh 1 2 3
+
+![Alt text](os_exp01_81.png)
+
  
 cat argshift.sh
 ```bash
@@ -1102,7 +1164,8 @@ set +x
 ## OUTPUT
  ./argshift.sh 1 2 3
  
- 
+ ![Alt text](os_exp01_82.png)
+
 cat > nc.awk
 ```bash
 BEGIN{}
@@ -1131,6 +1194,9 @@ bcdfghj
 ubcdfghj
 ```
 awk -f nc.awk data.dat
+
+![Alt text](os_exp01_83.png)
+
 ## OUTPUT 
  
 cat > palindrome.sh
@@ -1160,6 +1226,7 @@ fi
 ```
 ## OUTPUT 
 
+![Alt text](os_exp01_84.png)
 
 # RESULT:
 The Commands are executed successfully.
